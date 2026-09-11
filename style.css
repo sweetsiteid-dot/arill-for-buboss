@@ -385,3 +385,20 @@ font-size:42px;
     margin: 20px auto;
     border-radius: 18px;
 }
+
+/* =========================
+   GALLERY FOTO 1 2 / 3 4
+========================= */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 15px;
+}
