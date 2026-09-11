@@ -40,7 +40,7 @@ function checkPin(){
 
     }else{
 
-        alert("Wrong PIN ❤️");
+        alert("PIN salah ❤️");
 
         pin = "";
 
@@ -88,13 +88,11 @@ function createHeart(){
     heart.style.top = "-30px";
 
     heart.style.fontSize =
-        (Math.random()*20+15)+"px";
+        (Math.random()*20+15) + "px";
 
     heart.style.opacity = ".8";
 
     heart.style.pointerEvents = "none";
-
-    heart.style.zIndex = "999";
 
     heart.style.animation =
         `fall ${Math.random()*4+6}s linear`;
@@ -102,7 +100,9 @@ function createHeart(){
     document.body.appendChild(heart);
 
     setTimeout(()=>{
+
         heart.remove();
+
     },10000);
 
 }
@@ -121,51 +121,51 @@ style.innerHTML = `
 
 @keyframes fall{
 
-0%{
-transform:translateY(0);
-opacity:1;
-}
+    0%{
+        transform:translateY(0);
+        opacity:1;
+    }
 
-100%{
-transform:translateY(120vh);
-opacity:0;
-}
+    100%{
+        transform:translateY(120vh);
+        opacity:0;
+    }
 
 }
 
 @keyframes flowerBurst{
 
-0%{
-opacity:1;
-transform:
-translate(0,0)
-scale(.5);
-}
+    0%{
+        opacity:1;
+        transform:
+        translate(0,0)
+        scale(.5);
+    }
 
-100%{
-opacity:0;
-transform:
-translate(
-var(--x),
-var(--y)
-)
-scale(1.5)
-rotate(360deg);
-}
+    100%{
+        opacity:0;
+        transform:
+        translate(
+        var(--x),
+        var(--y)
+        )
+        scale(1.5)
+        rotate(360deg);
+    }
 
 }
 
 @keyframes popIn{
 
-from{
-opacity:0;
-transform:scale(.5);
-}
+    from{
+        opacity:0;
+        transform:scale(.5);
+    }
 
-to{
-opacity:1;
-transform:scale(1);
-}
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
 
 }
 
@@ -222,7 +222,6 @@ function createFlowerBurst(){
         "🌹",
         "🌹",
         "🌹",
-        "🌹",
         "❤️",
         "✨",
         "🌹",
@@ -241,8 +240,7 @@ function createFlowerBurst(){
                 )
             ];
 
-        flower.style.position =
-            "absolute";
+        flower.style.position = "absolute";
 
         flower.style.left = "0px";
 
@@ -267,7 +265,9 @@ function createFlowerBurst(){
         flowers.appendChild(flower);
 
         setTimeout(()=>{
+
             flower.remove();
+
         },2500);
 
     }
@@ -279,7 +279,71 @@ function createFlowerBurst(){
    LETTER
 ========================= */
 
-const message = `selamat ulang tahun sayang kuuu wish u all the best cintakuuu terimakasii banyaak sayang sudah lahir di dunia inii hahaha alayku terimakasii karena sudah mau terimaka kembali, sayang sekalii sama sayaaa, jujur sedih sekalikaaa karena di hari bahagiata ini nda ada ka disampingtaaaa😞 tapi selaluja ada di hati ta tohh, toh sayang? nassami masa nda semoga senyumnya tidak bakalan berubah semoga tatapannya juga ke saya tidak pernah berubah tatapan cinta ta nah ku maksudd ka kalau kuliat video ta berdua tatapan ta ke saya selaluka berfikir disayang sekalikaa, haruski tau sayang nah ku sayang sekaliiii kii sayaang bangeett semoga bisajki lihat itu sayang. bangga ka sama kita bisa ki bertahan sejauh ini karena setahuku pasti trauma sekaliki sama saya toh? minta maaf ka sayang nah, percaya ka ndbkal ka kasi begituki sayang, semoga di umur 20 ta ini lebih tenangki menghadapi masalah kalau dunia lagi nda berpihak ke kita sayang. sama kita banyak ka belajar banyak hal tentang sabar, tulus, dan berjuang. sayangku aulyazulfaindana alias BUBOSSSKUU selamat bertambah usiaa nahhhh cintaaakuuu semogaa selalu diberikan kesehatan kebahagiaan kekuatan untuk kejar impiannya tapi ku tauji iya impian ta itu menikah sama saya toh? jmmi bohong ka kutau skli ji itu dan janganki pernah putus asa sayang nah apapun yang terjadi nanti kedepannya bakalan selaluja adaa nda pernahjki sendirian sayang selaluka ada doakanki dan dukungki iloveuu elweeyysss cintakuuu happy birthday, my love.`;
+const message = `
+
+Selamat ulang tahun sayang kuuu 🤍
+
+Wish u all the best cintakuuu.
+
+Terimakasii banyaak sayang sudah lahir di dunia inii hahaha alayku 😭
+
+Terimakasii karena sudah mau terimaka kembali, sayang sekalii sama sayaaa.
+
+Jujur sedih sekalikaaa karena di hari bahagiata ini nda ada ka disampingtaaaa 😞
+
+Tapi selaluja ada di hati ta tohh, toh sayang?
+
+Nassami masa nda.
+
+Semoga senyumnya tidak bakalan berubah.
+
+Semoga tatapannya juga ke saya tidak pernah berubah.
+
+Tatapan cinta ta nah ku maksudd ka.
+
+Kalau kuliat video ta berdua, tatapan ta ke saya selaluka berfikir disayang sekalikaa.
+
+Haruski tau sayang nah, ku sayang sekaliiii kii.
+
+Sayaang bangeett.
+
+Semoga bisajki lihat itu sayang.
+
+Bangga ka sama kita bisa ki bertahan sejauh ini.
+
+Karena setahuku pasti trauma sekaliki sama saya toh?
+
+Minta maaf ka sayang nah.
+
+Percaya ka ndbkal ka kasi begituki sayang.
+
+Semoga di umur 20 ta ini lebih tenangki menghadapi masalah kalau dunia lagi nda berpihak ke kita sayang.
+
+Sama kita banyak ka belajar banyak hal tentang sabar, tulus, dan berjuang.
+
+Sayangku Aulyazulfaindana alias BUBOSSSKUU 🤍
+
+Selamat bertambah usiaa nahhhh cintaaakuuu.
+
+Semogaa selalu diberikan kesehatan, kebahagiaan, kekuatan untuk kejar impiannya.
+
+Tapi ku tauji iya impian ta itu menikah sama saya toh? 😭
+
+Jmmi bohong ka, kutau skli ji itu.
+
+Dan janganki pernah putus asa sayang nah.
+
+Apapun yang terjadi nanti kedepannya bakalan selaluja adaa.
+
+Nda pernahjki sendirian sayang.
+
+Selaluka ada, doakanki dan dukungki.
+
+I love uu elweeyysss cintakuuu ❤️
+
+Happy birthday, my love. 🤍
+`;
+
 
 function typeLetter(){
 
@@ -318,11 +382,12 @@ let currentQuestion = 0;
 const questions =
     document.querySelectorAll(".question");
 
+
 function checkAnswer(button,correct){
 
     if(!correct){
 
-        alert("Salahh 🤭 Coba lagi sayang ❤️");
+        alert("Salah? Coba lagi sayang ❤️");
 
         return;
 
@@ -340,19 +405,35 @@ function checkAnswer(button,correct){
 
     }else{
 
-        document.getElementById(
-            "quizSuccess"
-        ).classList.remove("hidden");
+        document.getElementById("quizSuccess")
+            .classList.remove("hidden");
 
         createConfetti();
 
-        document.getElementById(
-            "quizSuccess"
-        ).scrollIntoView({
-            behavior:"smooth"
-        });
+        document.getElementById("quizSuccess")
+            .scrollIntoView({
+                behavior:"smooth"
+            });
 
     }
+
+}
+
+
+/* =========================
+   SPECIAL MEMORY VIDEO
+========================= */
+
+function showSpecialMemory(){
+
+    const video =
+        document.getElementById("specialMemory");
+
+    video.classList.remove("hidden");
+
+    video.scrollIntoView({
+        behavior:"smooth"
+    });
 
 }
 
@@ -369,20 +450,15 @@ function createConfetti(){
             document.createElement("div");
 
         confetti.innerHTML =
-            ["❤️","✨","🌹"][
-                Math.floor(
-                    Math.random()*3
-                )
-            ];
+            ["❤️","✨","🌹"]
+            [Math.floor(Math.random()*3)];
 
-        confetti.style.position =
-            "fixed";
+        confetti.style.position = "fixed";
 
         confetti.style.left =
             Math.random()*100 + "vw";
 
-        confetti.style.top =
-            "-20px";
+        confetti.style.top = "-20px";
 
         confetti.style.fontSize =
             (Math.random()*20+15)+"px";
@@ -390,10 +466,7 @@ function createConfetti(){
         confetti.style.animation =
             `fall ${Math.random()*3+3}s linear`;
 
-        confetti.style.pointerEvents =
-            "none";
-
-        confetti.style.zIndex = "999";
+        confetti.style.pointerEvents = "none";
 
         document.body.appendChild(
             confetti
