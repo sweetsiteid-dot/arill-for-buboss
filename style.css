@@ -380,3 +380,39 @@ font-size:42px;
     margin: 20px auto;
     border-radius: 18px;
 }
+
+/* =========================
+   FIX GALLERY 2 x 2
+========================= */
+
+.gallery-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    grid-template-rows: repeat(2, auto) !important;
+    gap: 14px !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    justify-content: stretch !important;
+    justify-items: stretch !important;
+    align-items: stretch !important;
+}
+
+/* Semua foto harus memenuhi kotak masing-masing */
+.gallery-grid > img {
+    display: block !important;
+
+    width: 100% !important;
+    max-width: none !important;
+
+    height: 300px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    object-fit: cover !important;
+
+    grid-column: auto !important;
+    grid-row: auto !important;
+}
