@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Buboss ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="hearts"></div>
+
+<audio id="music" loop>
+<source src="terimakasih-cinta.mp3" type="audio/mpeg">
+</audio>
+
+<!-- PIN SCREEN -->
+
+<div id="pinScreen">
+
+<div class="pin-box">
+
+<h1>❤️</h1>
+
+<h2>Private Birthday Gift</h2>
+
+<p>Enter PIN</p>
+
+<input
+type="password"
+id="pinInput"
+readonly
+placeholder="••••">
+
+<div class="keypad">
+
+<button onclick="addPin('1')">1</button>
+<button onclick="addPin('2')">2</button>
+<button onclick="addPin('3')">3</button>
+
+<button onclick="addPin('4')">4</button>
+<button onclick="addPin('5')">5</button>
+<button onclick="addPin('6')">6</button>
+
+<button onclick="addPin('7')">7</button>
+<button onclick="addPin('8')">8</button>
+<button onclick="addPin('9')">9</button>
+
+<button onclick="clearPin()">⌫</button>
+<button onclick="addPin('0')">0</button>
+<button onclick="checkPin()">❤️</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- WEBSITE -->
+
+<div id="website" class="hidden">
+
+<!-- HERO -->
+
+<section class="hero">
+
+<p>From: Aril</p>
+<h1>Happy Birthday</h1>
+<h2>Buboss ❤️</h2>
+
+<p>
+hari ini tentang kamu, tentang satu orang dengan hati yang begitu indah yang pantas dirayain lebih dari sekadar ucapan ulang tahun. jadi aku bikin tempat kecil ini khusus buat kamu, isinya sedikit hal dari aku untuk kamu 🤍
+</p>
+
+<button onclick="openHeart()">
+Open My Heart ❤️
+</button>
+
+</section>
+
+<!-- MESSAGE -->
+
+<section id="bottleSection" class="hidden">
+
+<h2>A Message For You 🤍</h2>
+
+<div id="letterContainer">
+
+<div class="letter-paper">
+
+<div id="letterText">selamat ulang tahun sayang kuuu wish u all the best cintakuuu terimakasii banyaak sayang sudah lahir di dunia inii hahaha alayku terimakasii karena sudah mau terimaka kembali, sayang sekalii sama sayaaa, jujur sedih sekalikaaa karena di hari bahagiata ini nda ada ka disampingtaaaa😞 tapi selaluja ada di hati ta tohh, toh sayang? nassami masa nda semoga senyumnya tidak bakalan berubah semoga tatapannya juga ke saya tidak pernah berubah tatapan cinta ta nah ku maksudd ka kalau kuliat video ta berdua tatapan ta ke saya selaluka berfikir disayang sekalikaa, haruski tau sayang nah ku sayang sekaliiii kii sayaang bangeett semoga bisajki lihat itu sayang. bangga ka sama kita bisa ki bertahan sejauh ini karena setahuku pasti trauma sekaliki sama saya toh? minta maaf ka sayang nah, percaya ka ndbkal ka kasi begituki sayang, semoga di umur 20 ta ini lebih tenangki menghadapi masalah kalau dunia lagi nda berpihak ke kita sayang. sama kita banyak ka belajar banyak hal tentang sabar, tulus, dan berjuang. sayangku aulyazulfaindana alias BUBOSSSKUU selamat bertambah usiaa nahhhh cintaaakuuu semogaa selalu diberikan kesehatan kebahagiaan kekuatan untuk kejar impiannya tapi ku tauji iya impian ta itu menikah sama saya toh? jmmi bohong ka kutau skli ji itu dan janganki pernah putus asa sayang nah apapun yang terjadi nanti kedepannya bakalan selaluja adaa nda pernahjki sendirian sayang selaluka ada doakanki dan dukungki iloveuu elweeyysss cintakuuu happy birthday, my love.</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section class="gallery">
+
+<h2>Favorite Memories 📸</h2>
+
+<div class="gallery-grid">
+
+<img src="foto1.jpg">
+<img src="foto2.jpg">
+<img src="foto3.jpg">
+<img src="foto4.jpg">
+
+</div>
+
+</section>
+
+<!-- SPECIAL VIDEO -->
+
+<section class="video-section">
+
+<h2>Special Video ❤️</h2>
+
+<video controls playsinline>
+<source src="special.mp4" type="video/mp4">
+</video>
+
+</section>
+
+<!-- LOVE QUIZ -->
+
+<section class="quiz-section">
+
+<h2>❤️ Love Quiz ❤️</h2>
+
+<p>
+Jawab semua pertanyaan dengan benar ❤️
+</p>
+
+<div id="quizBox">
+
+<div class="question active">
+
+<h3>siapa yang aku sayang?</h3>
+
+<button onclick="checkAnswer(this,false)">a. kamu</button>
+<button onclick="checkAnswer(this,false)">b. kamu</button>
+<button onclick="checkAnswer(this,true)">c. tetep kamu ❤️</button>
+
+</div>
+
+<div class="question">
+
+<h3>siapa orang favoritku?</h3>
+
+<button onclick="checkAnswer(this,false)">a. kamu</button>
+<button onclick="checkAnswer(this,false)">b. kamu</button>
+<button onclick="checkAnswer(this,true)">c. jawabannya udah jelas ❤️</button>
+
+</div>
+
+<div class="question">
+
+<h3>siapa yang paling spesial buat aku?</h3>
+
+<button onclick="checkAnswer(this,false)">a. kamu</button>
+<button onclick="checkAnswer(this,false)">b. masih kamu</button>
+<button onclick="checkAnswer(this,true)">c. semuanya benar ❤️</button>
+
+</div>
+
+</div>
+
+<div id="quizSuccess" class="hidden">
+
+<h2>🎉 You Did It! 🎉</h2>
+
+<p>
+You unlocked the final memory ❤️
+</p>
+
+</div>
+
+</section>
+
+<!-- FINAL -->
+
+<section class="final">
+
+<h2>Happy Birthday ❤️</h2>
+
+<h3>Buboss</h3>
+
+<p>
+From: Aril
+</p>
+
+</section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
